@@ -10,7 +10,7 @@ elif [[ -z $KONTENA_TOKEN ]]; then
     # OPTIONAL option
 elif [[ -z $PLUGIN_KONTENA_FILE ]]; then
     echo "Please set KONTENA_FILE. Otherwise kontena.yml (default) will be set."
-    $PLUGIN_KONTENA_FILE='kontena.yml'
+    export PLUGIN_KONTENA_FILE='kontena.yml'
 elif [[ -z $KONTENA_GRID ]]; then
     echo "Please set KONTENA_GRID."
     exit 1
